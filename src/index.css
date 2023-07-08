@@ -1,11 +1,42 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 16px;
+}
+
+/* common css */
+
+/* row flexBoxes  */
+.cenetrItemsflexRow {
+  @apply flex items-center justify-center
+}
+
+.flexevenlyRow {
+  @apply flex items-center justify-evenly
+}
+.flexbetweenRow {
+  @apply flex items-center justify-between
+}
+
+.flexaroundRow {
+  @apply flex items-center justify-around
+}
+
+/* colomn flex Boxes  */
+.cenetrItemsflexcol {
+  @apply flex flex-col items-center justify-center
+}
+.flexevenlyCol {
+  @apply flex flex-col items-center justify-evenly
+}
+.flexbetweenCol {
+  @apply flex flex-col items-center justify-between
+}
+
+.flexaroundcol {
+  @apply flex flex-col items-center justify-around
 }

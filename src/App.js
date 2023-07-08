@@ -1,10 +1,13 @@
 import Signin from "./Pages/Signin";
+import Dashboard from "./Pages/Dashboard";
 
 function App() {
   return (
- <>
-< Signin />
- </>
+    <>
+      {/* <Signin /> */}
+
+      <Dashboard />
+    </>
   );
 }
 
