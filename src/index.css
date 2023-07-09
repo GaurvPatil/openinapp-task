@@ -6,6 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 /* common css */
@@ -23,7 +24,7 @@
 }
 
 .flexaroundRow {
-  @apply flex items-center justify-around
+  @apply flex items-center justify-around 
 }
 
 /* colomn flex Boxes  */
@@ -39,4 +40,11 @@
 
 .flexaroundcol {
   @apply flex flex-col items-center justify-around
+}
+
+.dot{
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  display: inline-block;
 }
