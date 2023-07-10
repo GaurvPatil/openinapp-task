@@ -35,7 +35,7 @@ export default function Signin() {
 
           {/* right  section two */}
 
-          <div className=" w-full mt-6  p-9 rounded-xl h-[19.8rem] w-[20rem] sm:w-[24rem]   ">
+          <div className=" w-full mt-6  p-9 rounded-xl h-[19.8rem] w-[20rem] sm:w-[24rem]  bg-white ">
             <form className="space-y-5 w-[16.3rem] sm:w-[20.3rem]" action="#" method="POST">
               <div>
                 <label htmlFor="email" className={style.label}>
