@@ -6,48 +6,63 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
 
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
 }
 
 /* common css */
 
 /* row flexBoxes  */
 .cenetrItemsflexRow {
-  @apply flex items-center justify-center
+  @apply flex items-center justify-center;
 }
 
 .flexevenlyRow {
-  @apply flex items-center justify-evenly
+  @apply flex items-center justify-evenly;
 }
 .flexbetweenRow {
-  @apply flex items-center justify-between
+  @apply flex items-center justify-between;
 }
 
 .flexaroundRow {
-  @apply flex items-center justify-around 
+  @apply flex items-center justify-around;
 }
 
 /* colomn flex Boxes  */
 .cenetrItemsflexcol {
-  @apply flex flex-col items-center justify-center
+  @apply flex flex-col items-center justify-center;
 }
 .flexevenlyCol {
-  @apply flex flex-col items-center justify-evenly
+  @apply flex flex-col items-center justify-evenly;
 }
 .flexbetweenCol {
-  @apply flex flex-col items-center justify-between
+  @apply flex flex-col items-center justify-between;
 }
 
 .flexaroundcol {
-  @apply flex flex-col items-center justify-around
+  @apply flex flex-col items-center justify-around;
 }
 
-.dot{
+.dot {
   height: 11px;
   width: 11px;
   border-radius: 50%;
   display: inline-block;
 }
-input:focus{
+input:focus {
   outline: none;
 }

@@ -37,7 +37,7 @@ const Card = () => {
       {cardData.map((card, index) => {
         return (
           <div
-            className="w-[13.8rem] h-[7.5rem]  rounded-xl p-[1rem]"
+            className="w-[18.8rem] sm:w-[13.8rem] h-[7.5rem]  rounded-xl p-[1rem]"
             style={{ background: card.bg }}
             key={index}
           >

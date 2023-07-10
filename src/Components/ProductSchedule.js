@@ -23,7 +23,7 @@ const topProducts = [
 const divHeaders = (text1, text2) => {
   return (
     <div className="flexbetweenRow">
-      <p className="text-lg font-bold ">{text1}</p>
+      <p className="text-base sm:text-lg font-bold ">{text1}</p>
       <p className="flexbetweenRow text-xs text-secondarycolor cursor-pointer">
         {text2} &nbsp;
         <img
@@ -38,11 +38,11 @@ const divHeaders = (text1, text2) => {
 
 const ProductSchedule = () => {
   return (
-    <div className="flexbetweenRow flex-wrap gap-[1rem] ">
-      <div className="h-[16rem] w-[30rem] flex flex-col gap-[1rem] rounded-2xl bg-white p-[2rem] ">
+    <div className="  flex  justify-center items-center flex-wrap gap-[1rem] lg:justify-between ">
+      <div className="h-[16rem] w-[30rem] flex flex-col gap-[1rem] rounded-2xl bg-white p-[1rem] sm:p-[2rem] ">
         {divHeaders("Top products", "May - June 2021")}
 
-        <div className="cenetrItemsflexRow gap-[4.5rem] ">
+        <div className="cenetrItemsflexRow  gap-[4.5rem] ">
           <img src={piechart} alt="piechart" />
           <div className="flexbetweenCol">
             {topProducts.map((item, index) => {
@@ -66,7 +66,7 @@ const ProductSchedule = () => {
         </div>
       </div>
 
-      <div className="h-[16rem] w-[30rem] flex flex-col gap-[1rem] rounded-2xl bg-white p-[2rem] ">
+      <div className="h-[16rem] w-[30rem] flex flex-col gap-[1rem] rounded-2xl bg-white  p-[2rem]  ">
         {divHeaders("Today’s schedule", "See All")}
         <div className="flex flex-col gap-[1rem]">
           <div className="p-[0.5rem] border-l-4 border-green-500">
@@ -74,7 +74,9 @@ const ProductSchedule = () => {
               Meeting with suppliers from Kuta Bali
             </p>
             <p className="text-xs text-secondarycolor">14.00-15.00</p>
-            <p className="text-xs text-secondarycolor">at Sunset Road, Kuta, Bali</p>
+            <p className="text-xs text-secondarycolor">
+              at Sunset Road, Kuta, Bali
+            </p>
           </div>
           <div className="p-[0.5rem]  border-l-4 border-indigo-500">
             <p className="text-sm text-darkGray">

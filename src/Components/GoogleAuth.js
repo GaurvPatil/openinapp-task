@@ -27,7 +27,7 @@ const GoogleAuth = () => {
         clientId={client_id}
         render={(renderProps) => (
           <button onClick={renderProps.onClick} disabled={renderProps.disabled}>
-            <div className="cenetrItemsflexRow w-[11.25rem] h-[1.8rem] gap-[8px] bg-white rounded-xl p-1 cursor-pointer">
+            <div className="cenetrItemsflexRow bg-white rounded-xl p-1 cursor-pointer h-[1.8rem] w-[9rem]  sm:w-[11.25rem]  gap-[8px] ">
               <img src={googleIcon} alt="googleIcon" className="h-[14px]" />
               <p className="text-secondarycolor text-xs">Sign in with Google</p>
             </div>
@@ -39,7 +39,7 @@ const GoogleAuth = () => {
         isSignedIn={true}
         className="w-[11.25rem] h-[1.8rem]"
       />
-      <div className="cenetrItemsflexRow w-[11.25rem] h-[1.8rem] gap-[8px] bg-white rounded-xl p-1 cursor-pointer">
+      <div className="cenetrItemsflexRow bg-white rounded-xl p-1 cursor-pointer h-[1.8rem] w-[9rem]  sm:w-[11.25rem]  gap-[8px] ">
         <img src={appleIcon} alt="appleIcon" className="h-[14px]" />{" "}
         <p className="text-secondarycolor text-xs">Sign in with Apple</p>
       </div>

@@ -37,7 +37,7 @@ const Chart = () => {
     <div className="flexbetweenCol p-[2rem] gap-[1rem]">
       <div className="flexbetweenRow  w-full">
         <div className="flex flex-col  justify-between ">
-          <p className="text-lg font-bold float-left">Activities</p>
+          <p className="text-base font-bold float-left sm:text-lg  ">Activities</p>
           <p className="flexbetweenRow text-xs text-secondarycolor cursor-pointer">
             May - June 2021 &nbsp;
             <img src={arrow} alt="arrow" />
