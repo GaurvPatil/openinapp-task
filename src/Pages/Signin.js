@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import GoogleAuth from "../Components/GoogleAuth";
 
 const style = {
@@ -12,6 +12,7 @@ const style = {
 };
 
 export default function Signin() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="w-full cenetrItemsflexRow bg-bgfaintwhite h-screen">
@@ -86,6 +87,9 @@ export default function Signin() {
                 className={`cenetrItemsflexRow ${style.submitBtn}`}
                 onClick={() => {
                   localStorage.setItem("user", "dummy@gmail.com");
+                  if (localStorage.getItem("user")) {
+                    navigate("/dashboard", { replace: true });
+                  }
                 }}
               >
                 Sign in
