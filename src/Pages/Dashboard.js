@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import dashboardIcon from "../assets/dashboard_icon.png";
 import transactionIcon from "../assets/transaction_icon.png";
 import scheduleIcon from "../assets/schedule_icon.png";
 import userIcon from "../assets/user_icon.png";
 import settingIcon from "../assets/setting_icon.png";
+import bellIcon from "../assets/bellIcon.png";
+import searchIcon from "../assets/Search icon.png";
 import Card from "../Components/Card";
 import ProductSchedule from "../Components/ProductSchedule";
-import bellIcon from "../assets/bellIcon.png";
+import Chart from "../Components/Chart";
+import { useNavigate } from "react-router-dom";
+import Logout from "../Components/Logout";
+
+// require('dotenv').config()
 
 const menues = [
   {
@@ -55,6 +61,14 @@ const style = {
 };
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  const user = localStorage.getItem("user");
+  useEffect(() => {
+    if (!user) {
+      navigate("/", { replace: true });
+    }
+  }, [user]);
+
   return (
     <div className={`flexbetweenRow ${style.outermostDiv}`}>
       {/* left section  */}
@@ -98,9 +112,17 @@ const Dashboard = () => {
         <div className={`flexbetweenRow ${style.firstDiv}`}>
           <p className={style.rightHeader}>Dashboard</p>
           <div className="flex gap-[2rem] items-center">
-            <div className="w-[11.25rem] h-[1.8rem]">search </div>
-            <img src={bellIcon} alt="bellIcon" className="w-[1.1rem] h-[1.25rem]" />
-            <div class="rounded-full h-[1.8rem] w-[1.8rem] bg-red-500"></div>
+            <div className="w-[11.25rem] h-[1.8rem] rounded-xl bg-white cenetrItemsflexRow">
+              <input className="bg-white w-[8.25rem]" type="text" />
+              <img src={searchIcon} className="w-3 h-3" alt="searchIcon" />
+            </div>
+            <img
+              src={bellIcon}
+              alt="bellIcon"
+              className="w-[1.1rem] h-[1.25rem]"
+            />
+
+            <Logout user = {user}/>
           </div>
         </div>
 
@@ -108,7 +130,9 @@ const Dashboard = () => {
           <Card />
         </div>
 
-        <div className={style.thirdDiv}>sada</div>
+        <div className={style.thirdDiv}>
+          <Chart />
+        </div>
 
         <>
           <ProductSchedule />

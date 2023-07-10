@@ -29,7 +29,7 @@ const divHeaders = (text1, text2) => {
         <img
           src={arrow}
           alt="arrow"
-          className={text2 == "See All" && "-rotate-90 "}
+          className={text2 === "See All" && "-rotate-90 "}
         />
       </p>
     </div>

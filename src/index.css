@@ -48,3 +48,6 @@
   border-radius: 50%;
   display: inline-block;
 }
+input:focus{
+  outline: none;
+}
