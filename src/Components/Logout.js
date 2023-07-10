@@ -30,7 +30,7 @@ const Logout = ({ user }) => {
         clientId={client_id}
         render={(renderProps) => (
           <button onClick={renderProps.onClick} disabled={renderProps.disabled}>
-            <div class="rounded-full h-[1.8rem] w-[1.8rem] bg-black text-white text-center font-bold cursor-pointer">
+            <div class="rounded-full h-[1.8rem] w-[1.8rem] bg-black text-white flex items-center justify-center font-bold cursor-pointer">
               {user ? (
                 user.charAt(0).toUpperCase()
               ) : (
