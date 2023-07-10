@@ -3,9 +3,8 @@ import Dashboard from "./Pages/Dashboard";
 import { useEffect } from "react";
 import { gapi } from "gapi-script";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { client_id } from "./Components/constant";
 
-const client_id =
-  "8491554420-tloit2go31dr9jes42knm4a680lgsmn3.apps.googleusercontent.com";
 
 function App() {
   useEffect(() => {

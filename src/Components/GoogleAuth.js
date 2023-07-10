@@ -3,8 +3,8 @@ import googleIcon from "../assets/google-icon 1.png";
 import appleIcon from "../assets/apple 1.png";
 import { GoogleLogin } from "react-google-login";
 import { useNavigate } from "react-router-dom";
-const client_id =
-  "8491554420-tloit2go31dr9jes42knm4a680lgsmn3.apps.googleusercontent.com";
+import { client_id } from "./constant";
+
 
 const GoogleAuth = () => {
   const navigate = useNavigate();

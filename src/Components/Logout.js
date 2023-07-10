@@ -3,8 +3,7 @@ import { GoogleLogout } from "react-google-login";
 import userIcon from "../assets/user_icon.png";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
-const client_id =
-  "8491554420-tloit2go31dr9jes42knm4a680lgsmn3.apps.googleusercontent.com";
+import { client_id } from "./constant";
 
 const Logout = ({ user }) => {
   const navigate = useNavigate();
